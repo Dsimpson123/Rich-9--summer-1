@@ -1,0 +1,22 @@
+body {
+    background-color: brown;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+p{
+    color:antiquewhite;
+    font-size: 20px
+}
+
+h1{
+    text-align:center;
+    margin:0 auto;
+}
+
+a{
