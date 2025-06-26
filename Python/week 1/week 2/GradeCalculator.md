@@ -5,4 +5,4 @@ An if-statement is used for decsion making
 3. Describe how an else-statement works.
 It is used as backup if the if-statement doesnt work.
 4. What does the elif statement do?
-The elif statement also can work as a backup if the if-statement comes back as false.
+The elif statements checks for conditions if the if-statement is false.
