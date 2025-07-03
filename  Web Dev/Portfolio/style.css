@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color:white;
+}
+
+#header {
+    width: 100%;
+    height: 100;
+    background-image: url(images/E9CF2741-BD6D-44F5-8A87-69ED1200F44B.png)
+    background-size auto;
+    background-position: center;
+}
