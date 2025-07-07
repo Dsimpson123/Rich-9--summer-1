@@ -12,8 +12,51 @@ body {
 
 #header {
     width: 100%;
-    height: 100;
-    background-image: url(images/E9CF2741-BD6D-44F5-8A87-69ED1200F44B.png)
-    background-size auto;
+    height: 100vh;
+    background-image: url("images/headshot.png");
+    background-size: 25%;
     background-position: center;
+}
+
+
+.container{
+    padding: 10px 10%;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo{
+    width: 320px
+}
+
+
+nav ul li {
+    display:inline-block;
+    list-style: none;
+    margin:10px 20px; 
+
+}
+
+nav ul li a{
+    color:aliceblue;
+    text-decoration:none;
+    font-size:20px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 100;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;bottom: -6px;
+
 }
