@@ -21,10 +21,3 @@ item = int(input("Item index: "))
 print("\nYou travel bag:")
 for item in travelBag:
    print(item)
-
-
-
-
-
-
-
