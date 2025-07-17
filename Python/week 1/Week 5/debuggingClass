@@ -1,0 +1,19 @@
+class debugging:
+    def __init__(self, age, name):
+        self.age=age
+        self.name=name
+        
+
+    def PrintName(self):
+        self.age = input("what is your age?")
+        print("Age: " + str(self.age))         
+
+    def Add(num1, num2):
+        return num1 + num2
+        
+
+    def SayHello(self):
+        self.name = input("What is your name?")
+        print("Hello ", self.name)
+
+
