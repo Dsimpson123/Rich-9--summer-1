@@ -7,15 +7,16 @@
   <meta name="description" content="Darren Simpson's personal portfolio - student, athlete, and aspiring developer from California." />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
   <!-- Header -->
-  <div id="header">
+  <header id="header">
     <div class="container">
       <nav>
         <img src="images/darren.png" class="logo" alt="Darren Logo" />
-        <ul>
+        <ul class="nav-links">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -24,22 +25,22 @@
         </ul>
       </nav>
       <div class="header-text">
-        <p>Student</p>
-        <h1>Hi <span>I'm Darren</span><br>from California</h1>
+        <p>Student & Athlete</p>
+        <h1>Hi, I'm <span>Darren</span><br>from California</h1>
       </div>
     </div>
-  </div>
+  </header>
 
   <!-- About -->
-  <div id="about">
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="images/33E17C2E-D4EF-40EE-A205-E7069FD0A011_1_105_c.jpeg" alt="Darren's photo" />
+          <img src="images/33E17C2E-D4EF-40EE-A205-E7069FD0A011_1_105_c.jpeg" alt="Darren Simpson" />
         </div>
         <div class="about-col-2">
           <h1 class="subtitle">About Me</h1>
-          <p>Hi, I'm Darren Simpson from Oakland, California. For the past two years, I have been playing baseball and pursuing my passion for technology.</p>
+          <p>Hi, I'm Darren Simpson from Oakland, California. I'm passionate about baseball, technology, and using my creativity to build new things. I’ve been learning to code, cooking since I was 7, and developing leadership skills through programs like The Hidden Genius Project.</p>
 
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab(event, 'Skills')">Skills</p>
@@ -49,116 +50,123 @@
 
           <div class="tab-contents active-tab" id="Skills">
             <ul>
-              <li><span>Chef</span><br>Cooking since I was 7 years old</li>
+              <li><span>Chef</span><br>Cooking since age 7</li>
               <li><span>Student</span><br>Salesian College Prep</li>
-              <li><span>Hidden Genius Project</span><br>Rich 9 Cohort</li>
+              <li><span>Hidden Genius Project</span><br>Rich 9 Cohort - Tech & Leadership</li>
               <li><span>Athlete</span><br>Baseball player at Salesian</li>
             </ul>
           </div>
 
           <div class="tab-contents" id="Experience">
             <ul>
-              <li><span>2025 - Current</span><br>Baseball Player at Salesian College Prep</li>
-              <li><span>2024 - Present</span><br>Rich 9 - Hidden Genius Project</li>
+              <li><span>2025 - Present</span><br>Baseball Player at Salesian College Prep</li>
+              <li><span>2024 - Present</span><br>Hidden Genius Project - Rich 9 Cohort</li>
             </ul>
           </div>
 
           <div class="tab-contents" id="Education">
             <ul>
-              <li><span>Montclair Elementary School</span><br>GPA: 4.00</li>
-              <li><span>Fortune Middle School</span><br>GPA: 4.00</li>
-              <li><span>Salesian College Prep</span><br>GPA: 3.80</li>
+              <li><span>Montclair Elementary</span> — GPA: 4.00</li>
+              <li><span>Fortune Middle School</span> — GPA: 4.00</li>
+              <li><span>Salesian College Prep</span> — GPA: 3.80</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Services -->
-<div id="services">
+  <section id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-
-        <div class="services-list">
-
-            <div class="service-col">
-                <i class="fa-solid fa-code"></i>
-                <h3>Python</h3>
-                <p>  A high-level programming language.<br>
-                </p>
-            </div>
-
-            <div class="service-col">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h3>Hidden Genius Project</h3>
-                <p>Trains and mentors Black male youth in tech, entrepreneurship, and leadership skills to transform their lives and communities.</p>
-            </div>
-
-            <div class="service-col">
-                <i class="fa-solid fa-database"></i>
-                <h3>Visual Studio Code</h3>
-                <p>A free code editor developed by Microsoft</p>
-            </div>
+      <h1 class="sub-title">What I Do</h1>
+      <div class="services-list">
+        <div class="service-col">
+          <i class="fa-solid fa-code"></i>
+          <h3>Python Development</h3>
+          <p>Writing scripts and learning the foundations of back-end programming with Python.</p>
+        </div>
+        <div class="service-col">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Hidden Genius Project</h3>
+          <p>Learning entrepreneurship, leadership, and tech to solve real-world problems.</p>
+        </div>
+        <div class="service-col">
+          <i class="fa-solid fa-database"></i>
+          <h3>Visual Studio Code</h3>
+          <p>Using VS Code as my main tool for coding websites, apps, and projects.</p>
+        </div>
       </div>
     </div>
-</div>
+  </section>
 
   <!-- Portfolio -->
-  <div id="portfolio">
+  <section id="portfolio">
     <div class="container">
-      <h1 class="sub-title">What Have Hidden Genius taught you?</h1>
+      <h1 class="sub-title">What I've Learned</h1>
       <div class="work-list">
         <div class="work">
           <div class="layer">
-            <h3>Through my time at The Hidden Genius Project, I’ve gained so much information about how to create a website,apps and a game. During the project I developed my leadership skills. I learned how to code, build apps, and think critically like an engineer, but also how to apply those skills to solve real problems through entrepreneurship.   </h3>
-            <p></p>
+            <h3>The Hidden Genius Experience</h3>
+            <p>At Hidden Genius, I learned how to build websites, apps, and even a game. I developed my leadership skills, started thinking like an engineer, and learned how to use tech to solve real problems.</p>
+          </div>
+        </div>
+
+        <!-- Add a real or placeholder project -->
+        <div class="work">
+          <img src="images/sample-project.jpg" alt="Project screenshot" />
+          <div class="layer">
+            <h3>My First Website</h3>
+            <p>A responsive HTML/CSS site I built during my training.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Contact -->
-  <div id="contact">
+  <section id="contact">
     <div class="container">
       <h1 class="sub-title">Contact Me</h1>
       <div class="row">
         <div class="contact-left">
           <p><i class="fa-solid fa-paper-plane"></i> darren.simpson-avery@hgs.hiddengeniusproject.org</p>
-          <p><i class="fa-solid fa-phone"></i> 510-384-5445</p>
+          <p><i class="fa-solid fa-phone"></i> (510) 384-5445</p>
           <div class="social-icons">
-            <a href="#"><i class="fa-solid fa-inbox"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin" aria-label="LinkedIn"></i></a>
+            <a href="#"><i class="fa-brands fa-github" aria-label="GitHub"></i></a>
+            <a href="#"><i class="fa-solid fa-inbox" aria-label="Email inbox"></i></a>
           </div>
         </div>
         <div class="contact-right">
-          <form action="#">
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea name="message" rows="6" placeholder="Message"></textarea>
-            <button type="submit" class="btn btn2">Send</button>
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Send Message</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Footer -->
-  <div class="copyright">
-    <p>Copyright &copy; 2024 Darren Simpson. All Rights Reserved. <i class="fa-solid fa-heart"></i></p>
-  </div>
+  <footer class="copyright">
+    <p>&copy; 2024 Darren Simpson. All Rights Reserved. <i class="fa-solid fa-heart"></i></p>
+  </footer>
 
-  <!-- Script Section -->
+  <!-- Tabs Script -->
   <script>
     function opentab(event, tabname) {
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
 
-      for (let i = 0; i < tabcontents.length; i++) {
-        tabcontents[i].classList.remove("active-tab");
+      for (let content of tabcontents) {
+        content.classList.remove("active-tab");
       }
-      for (let i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active-link");
+      for (let link of tablinks) {
+        link.classList.remove("active-link");
       }
 
       document.getElementById(tabname).classList.add("active-tab");
