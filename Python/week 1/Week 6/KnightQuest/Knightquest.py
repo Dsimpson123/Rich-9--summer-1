@@ -1,4 +1,6 @@
 import pgzrun
+import pgzrun
+import pgzrun
 from pgzero.actor import Actor
 from pgzero.keyboard import keys
 
@@ -7,6 +9,7 @@ GRID_WIDTH = 16
 GRID_HEIGHT = 12
 GRID_SIZE = 50
 GUARD_MOVE_INTERVAL = 0.5
+PLAYER_MOVE_INTERVAL = 0.1
 START_LIVES = 3
 
 # Window size
@@ -16,19 +19,18 @@ HEIGHT = GRID_HEIGHT * GRID_SIZE
 # The map (W=Wall, K=Key, G=Guard, P=Player, D=Door)
 MAP = [
     "WWWWWWWWWWWWWWWW",
-    "W          W    W",
-    "W          W    W",
-    "W  W  KG   W    W",
-    "W  WWWW WWWWWW W",
-    "W              W",
-    "W      P       W",
-    "W  WWWWWWWWWW  W",
-    "W      GK   W  W",
-    "W           W  W",
-    "W              D",
+    "W    W      W  W",
+    "W WWWWWWWW     W",
+    "W W KG   W WWWWW",
+    "W W WW WWW   K W",
+    "W   W   W W    W",
+    "W WWWW P WWWWW W",
+    "W     W   W    W",
+    "WWWWG WWW   W  W",
+    "W   W     WWW  W",
+    "W     G     W DW",
     "WWWWWWWWWWWWWWWW"
 ]
-
 # Game state variables
 player = None
 playerStartPos = (0, 0)
@@ -50,7 +52,10 @@ def GetActorGridPos(actor):
 def DrawBackground():
     for y in range(GRID_HEIGHT):
         for x in range(GRID_WIDTH):
-            screen.blit("floor1", GetScreenCoords(x, y))
+            if x % 2 == y % 2:
+                screen.blit("floor2", GetScreenCoords(x, y))
+            else:
+                screen.blit("floor1", GetScreenCoords(x, y))
 
 # Draws walls and doors
 def DrawScenery():
@@ -151,6 +156,8 @@ def MovePlayer(dx, dy):
             keysToCollect.remove(key)
             # sounds.key.play() removed
             break
+        animate(player, pos=GetScreenCoords(x, y), 
+                duration=PLAYER_MOVE_INTERVAL)
 
     # Move the player to new position
     player.pos = GetScreenCoords(x, y)
@@ -187,6 +194,9 @@ def MoveGuard(guard):
         guardY += 1
     elif playerY < guardY and MAP[guardY - 1][guardX] != "W":
         guardY -= 1
+
+    #Animate the guard as he moves
+
 
     guard.pos = GetScreenCoords(guardX, guardY)
 
