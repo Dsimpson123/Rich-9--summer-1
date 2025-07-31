@@ -10,6 +10,7 @@ GRID_HEIGHT = 12
 GRID_SIZE = 50
 GUARD_MOVE_INTERVAL = 0.5
 PLAYER_MOVE_INTERVAL = 0.1
+BACKGROUND_SEED = 12345
 START_LIVES = 3
 
 # Window size
@@ -19,7 +20,7 @@ HEIGHT = GRID_HEIGHT * GRID_SIZE
 # The map (W=Wall, K=Key, G=Guard, P=Player, D=Door)
 MAP = [
     "WWWWWWWWWWWWWWWW",
-    "W    W      W  W",
+    "W           W  W",
     "W WWWWWWWW     W",
     "W W KG   W WWWWW",
     "W W WW WWW   K W",
@@ -50,6 +51,7 @@ def GetActorGridPos(actor):
 
 # Draws the dungeon floor
 def DrawBackground():
+    random.seed(BACKGROUND_SEED)
     for y in range(GRID_HEIGHT):
         for x in range(GRID_WIDTH):
             if x % 2 == y % 2:
